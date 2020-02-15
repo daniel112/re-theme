@@ -37,4 +37,4 @@ export const App from Component {
 ```
 
 ### API
-Checkout the [Example App](https://simpleviewinc.github.io/sv-re-theme/) for documentation.
+Checkout the [Example App](https://simpleviewinc.github.io/re-theme/) for documentation.
