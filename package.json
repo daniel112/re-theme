@@ -19,6 +19,7 @@
     "build/esm/*"
   ],
   "scripts": {
+    "postinstall": "cd scripts && node postinstall.js",
     "build": "yarn clean:build; rollup -c rollup.config.js",
     "build:app": "cd app; yarn build",
     "clean:build": "rimraf build; mkdir build; mkdir build/cjs; mkdir build/esm; yarn copy:indexes",
