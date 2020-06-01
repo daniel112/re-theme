@@ -13,8 +13,8 @@ jobs:
       
     # Checks-out the repo on branch master (default) under $GITHUB_WORKSPACE
     - uses: actions/checkout@v2
-    with:
-      ref: ${{ github.ref }}
+      with:
+        ref: ${{ github.ref }}
 
     - name: Setup, build and publish
       env:
