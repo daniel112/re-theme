@@ -3,7 +3,7 @@ name: Build
 # events but only for the master branch
 on:
   push:
-    branches: [master]
+    branches: [master-test]
 
 jobs:
 
@@ -13,6 +13,8 @@ jobs:
       
     # Checks-out the repo on branch master (default) under $GITHUB_WORKSPACE
     - uses: actions/checkout@v2
+    with:
+      ref: ${{ github.ref }}
 
     - name: Setup, build and publish
       env:
