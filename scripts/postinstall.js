@@ -1,7 +1,6 @@
 const util = require('util')
 const exec = util.promisify(require('child_process').exec)
-const path = require('path')
-const rootDir = path.join(__dirname, '../')
+const rootDir = require('app-root-path').path
 
 
 /**
